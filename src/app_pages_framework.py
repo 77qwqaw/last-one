@@ -347,7 +347,7 @@ def render_terminal_report_viewer() -> None:
                 candidates.append(secret_value)
         except Exception:
             pass
-        candidates.extend(["http://172.20.10.2:8000", "http://192.168.137.1:8000", "http://127.0.0.1:8000"])
+        candidates.extend(["https://prep-guardian-api-production.up.railway.app", "http://172.20.10.2:8000", "http://192.168.137.1:8000", "http://127.0.0.1:8000"])
         unique: list[str] = []
         for item in candidates:
             cleaned = str(item).rstrip("/")
@@ -598,6 +598,7 @@ def render_new_service_loop_pages(page: str) -> bool:
         pages[page]()
         return True
     return False
+
 
 
 
