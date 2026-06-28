@@ -1,0 +1,9 @@
+﻿streamlit
+numpy
+plotly
+scipy
+opencv-python-headless
+requests
+fastapi
+uvicorn
+
